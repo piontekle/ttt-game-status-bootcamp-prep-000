@@ -29,6 +29,6 @@ def won?(board)
 end
 
 def full?(board)
-  !board.include(" " || "" || nil)
+  !board.include?(" " || "" || nil)
 end
 
