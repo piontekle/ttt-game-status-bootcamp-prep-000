@@ -20,5 +20,8 @@ def won?(board)
     win_combo = [board[combination[0]], board[combination[1]], board[combination[2]]]
     if win_combo.all? {|play| play == "X" || play == "O"}
       return combination
+    else
+      false
+    end
      end
 end
