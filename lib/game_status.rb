@@ -40,6 +40,10 @@ def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
 
-def winner
-  
+def winner(board)
+  if won?(board) == "X"
+    return "X"
+  elsif won?(board) == "O"
+    return "O"
+end
 end
