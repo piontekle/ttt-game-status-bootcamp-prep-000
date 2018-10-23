@@ -21,6 +21,7 @@ def won?(board)
     if win_combo.all? {|play| play == "X"}
      combination
      elsif win_combo.all? {|play| play == "O"}
+     combination
     else
       false
     end
