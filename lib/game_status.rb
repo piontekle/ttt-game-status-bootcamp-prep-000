@@ -29,10 +29,6 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |index|
-    index = 0
-  position_taken?(board, index)
-  index += 1
-end
+  !board.include(" " || "" || )
 end
 
