@@ -14,3 +14,9 @@ WIN_COMBINATIONS = [
   [0, 4, 8], # lft-rt diag
   [2, 4, 6]  # rt-lft diag
   ]
+  
+  WIN_COMBINATIONS.each do |win_combination|
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = 
+  end
