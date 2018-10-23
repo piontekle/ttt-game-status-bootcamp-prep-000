@@ -19,9 +19,9 @@ def won?(board)
   WIN_COMBINATIONS.detect do |combination|
     win_combo = [board[combination[0]], board[combination[1]], board[combination[2]]]
     if win_combo.all? {|play| play == "X"}
-     combination
+     return combination
      elsif win_combo.all? {|play| play == "O"}
-     combination
+      return combination
     else
       false
     end
@@ -40,3 +40,6 @@ def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
 
+def winner
+  
+end
